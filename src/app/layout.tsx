@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Manrope, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
-import { TopNav } from "@/components/home/TopNav";
+import { TopNav } from "@/components/TopNav";
 import { NavBar } from "@/components/NavBar";
 
 const manrope = Manrope({
@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "EduTech Express | Study Abroad",
   description:
-    "Study abroad counseling website template for destinations, events, and student success stories.",
+    "Study abroad counseling for destinations, events, and student success stories.",
 };
 
 export default function RootLayout({

@@ -18,7 +18,7 @@ type NavItem = {
 
 const navItems = [
     {
-        href: "#services",
+        href: "/services",
         label: "Our services",
         children: [
             { href: "#services", label: "Admission Guidance" },
@@ -37,10 +37,10 @@ const navItems = [
     },
     { href: "#learning-center", label: "Learning center" },
     {
-        href: "#about-us",
+        href: "/about-us",
         label: "About us",
         children: [
-            { href: "#about-us", label: "Who We Are" },
+            { href: "/about-us", label: "Who We Are" },
             { href: "#about-us", label: "Our Counselors" },
             { href: "#learning-center", label: "Success Stories" },
         ],
@@ -99,7 +99,7 @@ export function NavBar() {
     return (
         <header className="sticky top-0 z-20 border-b border-slate-200/80 bg-white/95 backdrop-blur-sm">
             <div className="mx-auto flex h-14 w-[min(1400px,92vw)] items-center justify-between gap-2 px-3 sm:h-16 sm:gap-4 sm:px-4 lg:h-24 lg:gap-6">
-                <Link className="shrink-0" href="#">
+                <Link className="shrink-0" href="/">
                     <Image
                         src="/EduLogo.png"
                         alt="EduTech Express Logo"
@@ -123,7 +123,6 @@ export function NavBar() {
                     Free Counselling
                 </Link>
 
-                {/* Mobile Menu Button */}
                 <button
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="inline-flex items-center justify-center rounded-md p-1.5 text-slate-600 transition hover:bg-slate-100 sm:p-2 lg:hidden"
@@ -133,7 +132,7 @@ export function NavBar() {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
+
             {mobileMenuOpen && (
                 <div className="border-t border-slate-200/80 bg-white px-3 py-3 sm:px-4 sm:py-4 lg:hidden">
                     <nav className="flex flex-col space-y-1 sm:space-y-2">

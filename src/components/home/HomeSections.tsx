@@ -3,7 +3,6 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Globe, FileCheck, Plane, Star } from "lucide-react";
-import { testimonials } from "./data";
 import Toast from "../Toast";
 
 export default function HomeSections() {
@@ -20,6 +19,27 @@ export default function HomeSections() {
         { country: "Australia", level: "Top-ranked universities", flagSrc: "/australia-flag.jpg" },
         { country: "UK", level: "Fast-track masters", flagSrc: "/united-kingdom-flag.jpg" },
         { country: "USA", level: "Research-focused programs", flagSrc: "/usa-flag.jpg" },
+    ];
+
+    const testimonials = [
+        {
+            quote:
+                "The counselors mapped my profile to the right universities and guided me through every document. My visa came through on the first attempt.",
+            name: "John Doe",
+            destination: "Master's in Australia",
+        },
+        {
+            quote:
+                "From IELTS prep to pre-departure briefing, the support was practical and clear. I always knew what my next step was.",
+            name: "Jane Doe",
+            destination: "Bachelor's in the UK",
+        },
+        {
+            quote:
+                "I visited the office with confusion and left with a plan. The team was transparent with timelines and costs throughout.",
+            name: "Will Smith",
+            destination: "Postgraduate in Canada",
+        },
     ];
 
 
@@ -55,7 +75,6 @@ export default function HomeSections() {
 
         if (Object.keys(nextErrors).length) {
             setErrors(nextErrors);
-            // focus first invalid field
             if (nextErrors.fullName) fullNameRef.current?.focus();
             else if (nextErrors.email) emailRef.current?.focus();
             else if (nextErrors.phone) phoneRef.current?.focus();
