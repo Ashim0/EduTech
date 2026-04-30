@@ -45,7 +45,9 @@ export function Footer() {
                 </div>
 
                 <div className="mt-8 border-t border-white/10 pt-6 text-xs text-slate-500 sm:text-sm">
-                    © 2026 EduTech Express. All rights reserved.
+                    © 2026 <a href="https://www.linkedin.com/in/ashim-dongol-728a5b267/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
+                        Ashim Dongol
+                    </a>. All rights reserved.
                 </div>
             </div>
         </footer>
