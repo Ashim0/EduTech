@@ -79,27 +79,27 @@ export default function HomeSections() {
                 style={{ backgroundImage: "url('/hero.png')" }}
             >
                 <div className="absolute inset-0 bg-slate-900/45" />
-                <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 py-28 lg:flex-row lg:items-center">
+                <div className="relative mx-auto flex max-w-7xl flex-col gap-6 px-4 py-12 sm:gap-8 sm:px-6 sm:py-20 md:py-28 lg:flex-row lg:items-center lg:gap-12">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <p className="text-sm tracking-[0.3em] uppercase text-blue-200 font-semibold">
-                            Study Abroad Consultancy Nepal
+                        <p className="text-xs tracking-[0.3em] uppercase text-blue-200 font-semibold sm:text-sm">
+                            Study Abroad Consultancy
                         </p>
-                        <h1 className="mt-4 text-5xl lg:text-7xl font-bold leading-tight text-white">
+                        <h1 className="mt-3 text-2xl font-bold leading-tight text-white sm:text-3xl sm:mt-4 md:text-5xl lg:text-6xl lg:mt-6">
                             Build Your Future Abroad
                         </h1>
-                        <p className="mt-6 text-lg text-slate-200 max-w-xl">
+                        <p className="mt-4 text-xs text-slate-200 max-w-xl sm:mt-6 sm:text-sm md:text-base lg:text-lg">
                             Expert counseling for university admissions, scholarships, visa
                             filing, and departure support.
                         </p>
-                        <div className="mt-8 flex gap-4 flex-wrap">
-                            <a className="rounded-xl bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 font-semibold cursor-pointer">
+                        <div className="mt-6 flex gap-2 flex-wrap sm:gap-4 sm:mt-8">
+                            <a className="rounded-lg sm:rounded-xl bg-blue-700 hover:bg-blue-800 text-white px-3 py-2 text-xs font-semibold cursor-pointer sm:px-6 sm:py-3 sm:text-sm">
                                 Free Consultation
                             </a>
-                            <a className="rounded-xl border border-white/40 text-white px-6 py-3 font-semibold cursor-pointer">
+                            <a className="rounded-lg sm:rounded-xl border border-white/40 text-white px-3 py-2 text-xs font-semibold cursor-pointer sm:px-6 sm:py-3 sm:text-sm">
                                 Explore Destinations
                             </a>
                         </div>
@@ -108,10 +108,9 @@ export default function HomeSections() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
-                        className="lg:ml-auto"
+                        className="lg:ml-auto w-full lg:w-auto mt-4 sm:mt-0"
                     >
-
-                        <div className="flex flex-col gap-4  p-6 ">
+                        <div className="flex flex-col gap-2 p-3 sm:gap-3 sm:p-4 md:gap-4 md:p-6">
                             {[
                                 ["300+", "Scholarship Wins"],
                                 ["97%", "Visa Success"],
@@ -120,10 +119,10 @@ export default function HomeSections() {
                             ].map((i) => (
                                 <div
                                     key={i[0]}
-                                    className="rounded-2xl bg-white/50 border border-white/20 p-5 text-white"
+                                    className="rounded-xl sm:rounded-2xl bg-white/50 border border-white/20 p-3 text-white sm:p-4 md:p-5"
                                 >
-                                    <p className="text-3xl font-bold">{i[0]}</p>
-                                    <p>{i[1]}</p>
+                                    <p className="text-lg font-bold sm:text-2xl md:text-3xl">{i[0]}</p>
+                                    <p className="text-xs sm:text-sm md:text-base">{i[1]}</p>
                                 </div>
                             ))}
                         </div>
@@ -131,12 +130,12 @@ export default function HomeSections() {
                 </div>
             </section>
 
-            <section id="university" className="max-w-7xl mx-auto px-6 py-24">
+            <section id="university" className="max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-24">
                 <div className="text-center max-w-3xl mx-auto">
-                    <p className="uppercase tracking-[0.3em] text-blue-700 text-sm font-semibold">
+                    <p className="uppercase tracking-[0.3em] text-blue-700 text-xs font-semibold sm:text-sm">
                         Destinations
                     </p>
-                    <h2 className="mt-3 text-4xl font-bold">
+                    <h2 className="mt-3 text-2xl font-bold sm:text-3xl md:text-4xl">
                         Top Countries Students Choose
                     </h2>
                 </div>
@@ -173,12 +172,12 @@ export default function HomeSections() {
                 </div>
             </section>
 
-            <section id="services" className="bg-slate-50 py-24">
-                <div className="max-w-7xl mx-auto px-6">
+            <section id="services" className="bg-slate-50 py-12 sm:py-24">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold">Our Process</h2>
+                        <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">Our Process</h2>
                     </div>
-                    <div className="mt-12 flex flex-wrap gap-6">
+                    <div className="mt-8 flex flex-wrap gap-4 sm:mt-12 sm:gap-6">
                         {processItems.map(({ icon: Icon, title }, idx) => {
                             const I = Icon;
                             return (
@@ -198,11 +197,11 @@ export default function HomeSections() {
                 </div>
             </section>
 
-            <section id="learning-center" className="max-w-7xl mx-auto px-6 py-24">
+            <section id="learning-center" className="max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-24">
                 <div className="text-center">
-                    <h2 className="text-4xl font-bold">Student Success Stories</h2>
+                    <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">Student Success Stories</h2>
                 </div>
-                <div className="mt-12 flex flex-wrap gap-6">
+                <div className="mt-8 flex flex-wrap gap-4 sm:mt-12 sm:gap-6">
                     {testimonials.map((testimonial, idx) => (
                         <div
                             key={`${testimonial.name}-${idx}`}
@@ -237,76 +236,76 @@ export default function HomeSections() {
 
             <section
                 id="consultation"
-                className="relative overflow-hidden bg-cover bg-center py-24 text-white"
+                className="relative overflow-hidden bg-cover bg-center py-12 sm:py-20 md:py-24 text-white"
                 style={{ backgroundImage: "url('/img1.png')" }}
             >
                 <div className="absolute inset-0 bg-slate-900/70" />
-                <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center">
+                <div className="relative mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:gap-8 sm:px-6 md:gap-12 lg:flex-row lg:items-center">
                     <div className="lg:flex-1">
-                        <h2 className="text-4xl font-bold">Book Free Consultation</h2>
-                        <p className="mt-4 text-blue-100">
+                        <h2 className="text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">Book Free Consultation</h2>
+                        <p className="mt-3 text-xs text-blue-100 sm:mt-4 sm:text-sm md:text-base">
                             Get your personalized roadmap for studying abroad.
                         </p>
                     </div>
-                    <div className="rounded-3xl border border-white/25 bg-white/12 p-8 text-white shadow-2xl ring-1 ring-white/20 backdrop-blur-xl lg:w-[min(100%,430px)]">
-                        <p className="text-xs font-bold uppercase tracking-[0.16em] text-blue-100/90">
+                    <div className="w-full rounded-2xl sm:rounded-3xl border border-white/25 bg-white/12 p-4 sm:p-6 md:p-8 text-white shadow-2xl ring-1 ring-white/20 backdrop-blur-xl lg:w-[min(100%,430px)]">
+                        <p className="text-[0.65rem] sm:text-xs font-bold uppercase tracking-[0.16em] text-blue-100/90">
                             Quick Application
                         </p>
-                        <h3 className="mt-2 text-2xl font-bold text-white">Talk to an Expert Counselor</h3>
-                        <p className="mt-2 text-sm text-blue-100/90">Fill in your details and we will contact you within 24 hours.</p>
+                        <h3 className="mt-2 text-base font-bold text-white sm:text-lg md:text-xl lg:text-2xl">Talk to an Expert Counselor</h3>
+                        <p className="mt-2 text-[0.7rem] text-blue-100/90 sm:text-xs md:text-sm">Fill in your details and we will contact you within 24 hours.</p>
 
                         {!submitted ? (
-                            <form onSubmit={handleSubmit} id="consultation-form" className="mt-6 space-y-4">
+                            <form onSubmit={handleSubmit} id="consultation-form" className="mt-4 space-y-3 sm:mt-6 sm:space-y-4">
                                 <div>
-                                    <label className="mb-1 block text-sm font-semibold text-blue-50">Full Name</label>
+                                    <label className="mb-1 block text-xs font-semibold text-blue-50 sm:text-sm">Full Name</label>
                                     <input
                                         ref={fullNameRef}
                                         name="fullName"
                                         placeholder="Enter your full name"
-                                        className={`w-full rounded-xl border px-4 py-3 text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.fullName
-                                                ? "border-red-400 bg-red-900/20 text-white"
-                                                : "border-white/35 bg-white/18 text-white focus:border-white/70"
+                                        className={`w-full rounded-lg sm:rounded-xl border px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.fullName
+                                            ? "border-red-400 bg-red-900/20 text-white"
+                                            : "border-white/35 bg-white/18 text-white focus:border-white/70"
                                             }`}
                                     />
-                                    {errors.fullName && <p className="mt-1 text-xs text-red-200">{errors.fullName}</p>}
+                                    {errors.fullName && <p className="mt-1 text-[0.65rem] sm:text-xs text-red-200">{errors.fullName}</p>}
                                 </div>
                                 <div>
-                                    <label className="mb-1 block text-sm font-semibold text-blue-50">Email</label>
+                                    <label className="mb-1 block text-xs font-semibold text-blue-50 sm:text-sm">Email</label>
                                     <input
                                         ref={emailRef}
                                         name="email"
                                         type="email"
                                         placeholder="you@example.com"
-                                        className={`w-full rounded-xl border px-4 py-3 text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.email
-                                                ? "border-red-400 bg-red-900/20 text-white"
-                                                : "border-white/35 bg-white/18 text-white focus:border-white/70"
+                                        className={`w-full rounded-lg sm:rounded-xl border px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.email
+                                            ? "border-red-400 bg-red-900/20 text-white"
+                                            : "border-white/35 bg-white/18 text-white focus:border-white/70"
                                             }`}
                                     />
-                                    {errors.email && <p className="mt-1 text-xs text-red-200">{errors.email}</p>}
+                                    {errors.email && <p className="mt-1 text-[0.65rem] sm:text-xs text-red-200">{errors.email}</p>}
                                 </div>
                                 <div>
-                                    <label className="mb-1 block text-sm font-semibold text-blue-50">Phone</label>
+                                    <label className="mb-1 block text-xs font-semibold text-blue-50 sm:text-sm">Phone</label>
                                     <input
                                         ref={phoneRef}
                                         name="phone"
                                         placeholder="+977 98XXXXXXXX"
-                                        className={`w-full rounded-xl border px-4 py-3 text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.phone
-                                                ? "border-red-400 bg-red-900/20 text-white"
-                                                : "border-white/35 bg-white/18 text-white focus:border-white/70"
+                                        className={`w-full rounded-lg sm:rounded-xl border px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm placeholder:text-blue-100/75 outline-none transition focus:ring-4 focus:ring-white/20 ${errors.phone
+                                            ? "border-red-400 bg-red-900/20 text-white"
+                                            : "border-white/35 bg-white/18 text-white focus:border-white/70"
                                             }`}
                                     />
-                                    {errors.phone && <p className="mt-1 text-xs text-red-200">{errors.phone}</p>}
+                                    {errors.phone && <p className="mt-1 text-[0.65rem] sm:text-xs text-red-200">{errors.phone}</p>}
                                 </div>
                                 <button
                                     type="submit"
                                     disabled={submitting}
-                                    className="w-full rounded-xl bg-white py-3 text-sm font-bold tracking-wide text-[#0b3d91] shadow-lg transition disabled:opacity-60 disabled:cursor-wait hover:bg-blue-50"
+                                    className="w-full rounded-lg sm:rounded-xl bg-white py-2 text-xs font-bold tracking-wide text-[#0b3d91] shadow-lg transition disabled:opacity-60 disabled:cursor-wait hover:bg-blue-50 sm:py-3 sm:text-sm md:py-3"
                                 >
                                     {submitting ? "Sending…" : "Request Free Consultation"}
                                 </button>
                             </form>
                         ) : (
-                            <div className="mt-6 rounded-lg bg-white/10 p-4 text-sm font-semibold text-white">Thank you — we will contact you soon.</div>
+                            <div className="mt-4 rounded-lg bg-white/10 p-3 text-xs font-semibold text-white sm:mt-6 sm:p-4 sm:text-sm">Thank you — we will contact you soon.</div>
                         )}
                     </div>
                 </div>

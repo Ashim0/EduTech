@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
@@ -16,6 +16,11 @@ const spaceMono = Space_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "EduTech Express | Study Abroad",
   description:
@@ -30,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${spaceMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${spaceMono.variable} h-full w-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full w-full flex flex-col overflow-x-hidden">
         <TopNav />
         <NavBar />
         {children}
